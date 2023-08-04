@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+svg{
+    @apply inline-block;
+}
+
+.custom_shadow{
+    box-shadow: 0px 15px 30px rgb(29 23 77/5%);
+}
+
 .banner_area{
     background: url(./assets/img/banner/hero_bg.png);
 }
