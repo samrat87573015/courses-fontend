@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner_area{
+    background: url(./assets/img/banner/hero_bg.png);
+}
+.container{
+    @apply mx-auto
+}
+.overlay{
+    position: relative;
+}
+.overlay::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .5;
+    height: 100%;
+    z-index: 1;
+}
+.btn{
+    @apply text-white font-bold py-4 px-8 bg-yellow-600 inline-block;
+}
+.main_menu a{
+    @apply rounded-md px-3 py-2 text-sm font-medium;
+}
+#mobile-menu a{
+    @apply text-gray-800 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium;
+}
+.pofile-menu a{
+    @apply block px-4 py-2 text-sm text-gray-700;
+}
